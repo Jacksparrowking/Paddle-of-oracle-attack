@@ -87,7 +87,7 @@ def poa(text, key, ivtemp):
     # pad_text = add_padding(text=text)
     # ciphertext = cipher(key=key, iv=ivtemp, encoded_text=pad_text)
     #print(for_all_blocks(text, ivtemp, ciphertext))
-    print(for_all_blocks(key, IVTEMP, text))
+    print(for_all_blocks(key, ivtemp, text))
 
 def main():
     ciphertext = bytes.fromhex(sys.argv[1])
